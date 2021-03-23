@@ -1,0 +1,185 @@
+:root
+{
+    --primary:rgb(43,43,43)
+    --text :rgb(202,24,60)
+}
+*{
+    margin:0;
+
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+nav
+{
+    color: lightslategrey;
+    font-size: 1.1rem;
+    line-height: 2;
+    margin:1rem;
+}
+p
+{
+    font-size: 1.1rem;
+    line-height: 2;
+    margin:1rem;
+}
+h2,h3
+{
+    margin: 1rem;
+    text-align:center;
+}
+h2
+{
+    margin:5rem;
+    font-size: 2rem;
+}
+h3
+{
+    font-size: 1.5rem;
+}
+/*utilities*/
+.site-header
+{
+    background-image: url(libros.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    height: 40vh;
+}
+.site-header img
+{
+    width:12rem;
+    height: 12rem;
+    border-radius:50%;
+    border: 5px solid #ffffff;
+    padding: 3px;
+    opacity: 0.8;
+}
+.site-header p
+{
+ margin-top: 1rem;
+ font-size:1.2rem;
+
+}
+.site-header h1
+{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+.container
+{
+    color:rgb(0, 0, 0) ;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*Menu*/
+
+nav.menu
+{
+    background-color: rgb(43, 43, 43);
+    text-align: var(--primary);
+}
+
+nav.menu.a
+{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    padding: 1rem;
+    margin-right: 3rem;
+
+}
+@media(max-width:768px)
+{
+    nav .menu.a
+    {
+     display: block;
+    }
+}
+
+nav.menu a:hover
+{
+    font: size 1.4rem;
+    color:var(--text);
+    font-weight: bold;
+}
+/*Service*/
+.services-container
+{
+    display:flex;
+}
+@media(max-width:768px)
+{
+    .services-container
+    {
+        display: block;
+    }
+}
+.service
+{
+
+    background-color:#dedede;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+
+/*icons*/
+
+.icons
+{
+    text-align:center;
+}
+.icons i
+{
+    margin-right: 2rem;
+}
+.fa-html5
+{
+    font-size: 3rem;
+    color: orangered;
+}
+.fa-css3-alt
+{
+font-size: 3rem;
+color: brown;
+}
+.fa-js-square
+{
+font-size: 3rem;
+color: yellow;
+}
+.fa-python
+{
+font-size: 3rem;
+color: blue;
+}
+.fa-map-marker-alt
+{
+    color: yellow;
+}
+
+/*footer*/
+.footer-site
+{
+    background-color: var(--primary);
+    color: white;
+    font-size:1rem;
+    text-align:center;
+    padding:1rem 0 ;
+    margin-top: 1rem;
+}
+/*Projects*/
+.projects
+{
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
